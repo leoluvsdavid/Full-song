@@ -1,0 +1,121 @@
+# Sing About Me, I'm Dying of Thirst
+live_loop :kdrums do
+  7.times do
+    kendrick_drums = "C:/Users/leo_ashley/Downloads/tomp3.cc - Beat Cover  Sing About Me Im Dying of Thirst.wav"
+    sample kendrick_drums, amp: 1
+  end
+  stop
+end
+beat = [0.5, 0.5, 3, 3, 3]
+define :kendrickmusic do
+  use_synth :piano
+  play :a, sustain: 3
+  use_synth :piano
+  play :a, sustain: 3
+  play :cs, sustain: 3
+  play :e, sustain: 3
+  play :gs, sustain: 3
+  sleep 2.1
+  use_synth :piano
+  play :ds, sustain: 3
+  play :as, sustain: 3
+  play :cs, sustain: 3
+  play :gs, sustain: 3
+  play :fs
+  sleep 0.4
+  play :cs
+  sleep 0.4
+  play :gs
+  play :cs, sustain: 3
+  play :e, sustain: 3
+  play :b, sustain: 3
+  play :ds, sustain: 3
+  sleep 1.5
+  play :bs
+  play :e, sustain: 3
+  play :cs, sustain: 3
+  play :ds, sustain: 3
+  play :gs, sustain: 3
+  sleep 0.4
+  play :a4
+  sleep 0.4
+  play :b
+  play :as, sustain: 3
+  play :b, sustain: 3
+  play :cs, sustain: 3
+  play :gs, sustain: 3
+  sleep 0.4
+  play :cs
+  play :b, sustain: 3
+  play :cs, sustain: 3
+  play :ds, sustain: 3
+  play :fs, sustain: 3
+  sleep 1.4
+  play :ds
+  play :cs, sustain: 3
+  play :gs, sustain: 3
+  play :ds, sustain: 3
+  play :es, sustain: 3
+  sleep 1.4
+  play :as
+  play :gs, sustain: 3
+  play :as, sustain: 3
+  play :ds, sustain: 3
+  play :fs, sustain: 3
+  sleep 1.4
+  play :gs
+  play :gs, sustain: 3
+  play :a, sustain: 3
+  play :bs, sustain: 3
+  play :e, sustain: 3
+  play :fs, sustain: 3
+  sleep 0.4
+  play :fs
+  sleep 0.4
+  play :b
+  sleep 0.4
+end
+
+sleep 2.5
+
+2.times do :kendrick
+  with_fx :level do
+    kendrickmusic
+  end
+end
+sleep 2.5
+# I Wonder
+jane_die = "C:/Users/leo_ashley/Downloads/onlymp3.to - Breaking Bad Season 5 Episode 14 I watched Jane die HD CLIP-vNoq2d0WOaM-256k-1654968736024.wav"
+sample jane_die, amp: 13
+sleep 29
+
+jesse_yell = "C:/Users/leo_ashley/Downloads/onlymp3.to - Who's Your Hero (nichecore corecore)-wfiOHGeVlPw-256k-1654132124398.wav"
+sample jesse_yell, amp: 3
+
+live_loop :ye, delay: 6 do
+  W = 7
+  1.times do
+    ye_melody = "C:/Users/leo_ashley/Downloads/onlymp3.to - Kanye West - I Wonder (piano tutorial)-4K9LYEDGZvM-256k-1655364791472.wav"
+    sample ye_melody, amp:W
+    use_sample_bpm :drum_bass_hard
+    sleep 7
+    W = W - 3
+  end
+  stop
+end
+use_synth :piano
+with_fx :reverb do
+  beats = [1, 5, 2, 1, 5]
+  sounds = [:e, :d, :c, :d, :c,]
+  i = 0
+  k = 0
+  3.times do
+    play sounds[i]
+    sleep beats[k]
+    i=i+1
+    j=j+1
+  end
+end
+sleep 45
+fam_outro = "C:/Users/leo_ashley/Downloads/onlymp3.to - Family guy Breaking bad (and The Wire) 1080P-l4LhXycJ7rI-256k-1655759174932.wav"
+sample fam_outro, amp: 3
