@@ -1,11 +1,13 @@
-# Sing About Me, I'm Dying of Thirst
 live_loop :kdrums do
-  7.times do
+  3.times do
     kendrick_drums = "C:/Users/leo_ashley/Downloads/tomp3.cc - Beat Cover  Sing About Me Im Dying of Thirst.wav"
-    sample kendrick_drums, amp: 1
+    sample kendrick_drums, amp: 3
+    print (sample_duration kendrick_drums)
+    sleep 6.93
   end
   stop
 end
+
 beat = [0.5, 0.5, 3, 3, 3]
 define :kendrickmusic do
   use_synth :piano
