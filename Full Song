@@ -96,7 +96,7 @@ jesse_yell = "C:/Users/leo_ashley/Downloads/onlymp3.to - Who's Your Hero (nichec
 sample jesse_yell, amp: 3
 
 live_loop :ye, delay: 6 do
-  W = 7
+  W = 5
   1.times do
     ye_melody = "C:/Users/leo_ashley/Downloads/onlymp3.to - Kanye West - I Wonder (piano tutorial)-4K9LYEDGZvM-256k-1655364791472.wav"
     sample ye_melody, amp:W
@@ -105,6 +105,18 @@ live_loop :ye, delay: 6 do
     W = W - 3
   end
   stop
+  7.times do
+    sample :drum_bass_hard
+    play :e
+    sample :drum_bass_hard
+    play :d
+    sample :drum_bass_hard
+    play :c
+    sample :drum_bass_hard
+    play :d
+    sample :drum_bass_hard
+    play :c
+  end
 end
 use_synth :piano
 with_fx :reverb do
